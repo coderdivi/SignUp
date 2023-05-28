@@ -1,11 +1,12 @@
 import React from "react";
 import { useState } from "react";
-import "./userAccess.css";
+// import "./userAccess.css";
 // import {GoogleLogin} from '@react-oauth/google';
-import logo from "./assets/logo.png/";
-import RegisterImg from "./assets/register.png/";
-import UserEdit from "./assets/user-edit.png";
-const App = () => {
+import logo from "../../assets/logo.png";
+import RegisterImg from "../../assets/register.png";
+import UserEdit from "../../assets/user-edit.png";
+
+export default function UserAccess () {
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -91,5 +92,3 @@ const App = () => {
     </section>
   );
 };
-
-export default App;
