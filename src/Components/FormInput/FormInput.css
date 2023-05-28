@@ -42,7 +42,7 @@ input:invalid[focused="true"] ~ .errorMessage {
     width: 100%;
   }
   input {
-    padding: 3%;
+    padding: 2%;
   }
 
   label {
@@ -55,6 +55,7 @@ input:invalid[focused="true"] ~ .errorMessage {
 @media (max-width: 768px) {
   .FormInput {
     width: 100%;
+  
   }
   label {
     font-size: 12px;

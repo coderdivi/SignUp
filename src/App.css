@@ -6,7 +6,6 @@
   height: 100vh;
   position: relative;
   width: 100%;
-  margin-bottom: 3%;
 }
 /**!Banner styles */
 section .imgBox {
@@ -54,6 +53,7 @@ section .imgBox::before {
 section .contentBox .formBox {
   width: 100%;
   height: 100%;
+  margin-bottom: 5%;
 }
 
 section .contentBox {
@@ -135,13 +135,13 @@ button {
 .google-icon {
   margin-right: 30px;
 }
-
+/* *!media queries >1414px*/
 @media (max-width: 1414px) {
   form {
     padding: 0;
   }
   .formBox h1 {
-    margin-top: 50%;
+    margin-top: 70%;
   }
   .formBox p {
     margin-bottom: 3%;
@@ -198,7 +198,7 @@ button {
     font-size: 28px;
   }
   .formBox h1 {
-    margin-top: 40%;
+    margin-top: 45%;
     font-size: 45px;
   }
   .btn-text p {
@@ -250,7 +250,7 @@ button {
   .formBox h1 {
     font-size: 26px;
     color: black;
-    margin-top: 70%;
+    margin-top: 100%;
   }
   .formBox p {
     font-size: 18px;
@@ -268,4 +268,9 @@ button {
   .spanOr {
     color: black;
   }
+}
+@media screen and (max-width: 350px), screen and (max-height: 600px){
+.logoContent{
+  margin-bottom: 100% ;
+}
 }
