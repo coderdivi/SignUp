@@ -1,0 +1,75 @@
+/**! input field styles */
+.FormInput {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+input {
+  padding: 20px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+}
+
+input:focus {
+  background-color: rgb(255, 231, 187);
+  outline: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+
+label {
+  font-size: 12px;
+  color: black;
+  margin-top: 9px;
+}
+/* *!Validation styles */
+input:invalid[focused="true"] ~ .errorMessage {
+  display: block;
+}
+.errorMessage {
+  display: none;
+  color: red;
+  font-size: 10px;
+}
+/* *!media queries > 1334px */
+@media (max-width: 1334px) {
+  .FormInput {
+    width: 100%;
+  }
+  input {
+    padding: 3%;
+  }
+
+  label {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 9px;
+  }
+}
+/**! media queries 768px */
+@media (max-width: 768px) {
+  .FormInput {
+    width: 100%;
+  }
+  label {
+    font-size: 12px;
+    color: #000;
+    margin-top: 9px;
+  }
+}
+/* *!media queries 450px */
+@media (max-width: 450px) {
+  label {
+    font-size: 12px;
+    color: #000;
+    margin-top: 9px;
+  }
+  .FormInput {
+    width: 100%;
+  }
+}

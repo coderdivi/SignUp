@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  margin-bottom: 3%;
+}
+/**!Banner styles */
+section .imgBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+section .imgBox .BannerText h1 {
+  font-weight: 900;
+  font-size: 60px;
+}
+
+section .imgBox .BannerText p {
+  font-weight: 500;
+  font-size: 30px;
+  color: #fff;
+}
+section .imgBox .BannerText {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section .imgBox::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+/* *!form styles */
+section .contentBox .formBox {
+  width: 100%;
+  height: 100%;
+}
+
+section .contentBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 0 60px;
+}
+.logoContent img {
+  position: absolute;
+  top: 4%;
+  left: 5%;
+}
+.formBox h1 {
+  font-weight: 900;
+  font-size: 64px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  margin-top: 16%;
+}
+.formBox p {
+  font-weight: 800;
+  font-size: 32px;
+  text-align: center;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* *!button styles */
+button {
+  width: 50%;
+  /* height: 50px; */
+  padding: 10px;
+  border: none;
+  background-color: orangered;
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.google-btn {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 5px;
+  padding: 1%;
+  border: 1px solid orangered;
+}
+.btn-text p {
+  color: black;
+  font-size: 20px;
+  margin: 0;
+}
+
+.google-icon {
+  margin-right: 30px;
+}
+
+@media (max-width: 1414px) {
+  form {
+    padding: 0;
+  }
+  .formBox h1 {
+    margin-top: 50%;
+  }
+  .formBox p {
+    margin-bottom: 3%;
+  }
+
+  section .imgBox img {
+    height: 150%;
+  }
+}
+/* *!media queries >1334px*/
+@media (max-width: 1334px) {
+  section .imgBox {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  section .contentBox {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  section .contentBox .formBox {
+    width: 100%;
+    /* padding: 40px; */
+    background: rgb(255, 255, 255/0.9);
+    margin: 50px;
+  }
+  form {
+    background: none;
+    padding: 0;
+  }
+  .BannerText {
+    display: none;
+  }
+  button,
+  .google-btn {
+    width: 50%;
+  }
+  .SignIn,
+  .spanOr,
+  .formBox h1,
+  p {
+    color: #fff;
+  }
+  .formBox p {
+    margin-top: 0;
+    margin-bottom: 3%;
+    font-size: 28px;
+  }
+  .formBox h1 {
+    margin-top: 40%;
+    font-size: 45px;
+  }
+  .btn-text p {
+    font-size: 16px;
+  }
+}
+
+/* *!media query >768px */
+@media (max-width: 768px) {
+  .imgBox {
+    display: none;
+  }
+  button,
+  .google-btn {
+    width: 100%;
+  }
+
+  section .contentBox .formBox {
+    width: 100%;
+  }
+  .formBox h1 {
+    font-size: 36px;
+    color: black;
+    margin-top: 50%;
+  }
+  .formBox p {
+    font-size: 20px;
+    color: black;
+  }
+  .spanOr {
+    text-align: center;
+  }
+  .SignIn,
+  .spanOr {
+    color: black;
+  }
+}
+/* *!media query > 450px */
+@media (max-width: 450px) {
+  .imgBox {
+    display: none;
+  }
+
+  section .contentBox .formBox {
+    width: 100%;
+    padding: 0;
+    margin: 5%;
+  }
+  .formBox h1 {
+    font-size: 26px;
+    color: black;
+    margin-top: 70%;
+  }
+  .formBox p {
+    font-size: 18px;
+    color: black;
+  }
+  form {
+    padding: 0;
+  }
+  button,
+  .google-btn {
+    width: 100%;
+  }
+
+  .SignIn,
+  .spanOr {
+    color: black;
+  }
+}
