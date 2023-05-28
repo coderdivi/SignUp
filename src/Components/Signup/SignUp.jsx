@@ -4,6 +4,8 @@ import RegisterImg from "../../assets/register.png";
 import google from "../../assets/google.png";
 import FormInput from "../FormInput/FormInput";
 import { Link } from 'react-router-dom';
+import GAuthButton from '../GOAuth/GOAuth';
+
 
 export default function SignUp() {
 
@@ -97,21 +99,19 @@ export default function SignUp() {
               </button>
             </Link>
           </div>
-          <span class="spanOr">or</span>
-          <a class="google-btn">
+          <span className="spanOr">or</span>
+          <a className="google-btn">
             <div>
               <img
-                class="google-icon"
+                className="google-icon"
                 src={google}
                 style={{ width: "20px" }}
                 alt="Google"
               />
             </div>
-            <div class="btn-text" >
-              <p>Sign in with Google</p>
-            </div>
+            <GAuthButton />
           </a>
-          <span class="SignIn" style={{ marginTop: "10px", fontSize: "10px" }}>
+          <span className="SignIn" style={{ marginTop: "10px", fontSize: "10px" }}>
             Already have an account?
             <a
               href="#"
@@ -122,7 +122,7 @@ export default function SignUp() {
           </span>
         </form>
       </div>
-      <div class="imgBox">
+      <div className="imgBox">
         <div className="BannerText">
           <h1 style={{ color: "white" }}>
             Welcome to

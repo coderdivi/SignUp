@@ -63,7 +63,7 @@ export default function UserAccess () {
           </div>
           <button onClick={handleContinueClick} disabled={!continueEnabled}>Continue</button>
           <span
-            class="SignIn"
+            className="SignIn"
             style={{ marginTop: "10px"}}
           >
             Already have an account?
@@ -76,7 +76,7 @@ export default function UserAccess () {
           </span>
         </form>
       </div>
-      <div class="imgBox">
+      <div className="imgBox">
         <div className="BannerText">
           <h1 style={{ color: "white" }}>
             Welcome to
