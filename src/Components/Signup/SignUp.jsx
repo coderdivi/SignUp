@@ -3,7 +3,7 @@ import logo from "../../assets/logo.png";
 import RegisterImg from "../../assets/register.png";
 import google from "../../assets/google.png";
 import FormInput from "../FormInput/FormInput";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import GAuthButton from "../GOAuth/GOAuth";
 
 export default function SignUp() {
@@ -71,7 +71,7 @@ export default function SignUp() {
   //   Password: values,
   //   confirmPassword: values.Password
   // }
-const navigate= useNavigate();
+const navigate= ()=>{
   fetch("https://edgegap.onrender.com/", {
     method: "POST",
     headers: {
@@ -97,6 +97,7 @@ const navigate= useNavigate();
       console.error(error);
     })
     console.log(navigate);
+  }
   // .then(response=>response.json())
   // .then(data =>{
   //   console.log(data);
@@ -129,9 +130,9 @@ const navigate= useNavigate();
             />
           ))}
           <div className="link-btn-wrapper">
-            {/* <Link to={`/signup-2`}> */}
-            <button>Sign Up</button>
-            {/* </Link> */}
+            <Link to={`/signup-2`}>
+            <button onClick={navigate}>Sign Up</button>
+            </Link>
           </div>
           <span className="spanOr">or</span>
           <a
