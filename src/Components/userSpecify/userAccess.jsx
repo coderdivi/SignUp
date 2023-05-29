@@ -32,8 +32,8 @@ export default function UserAccess () {
           alt="Edu_cate"
         />
       </div>
-      <div className="contentBox">
-        <form
+      <div id= "accessContent" className="contentBox">
+        <form id="accessForm"
           className="formBox"
           onSubmit={handleSubmit}
         >
@@ -67,8 +67,7 @@ export default function UserAccess () {
             style={{ marginTop: "10px"}}
           >
             Already have an account?
-            <a
-              href="#"
+            <a href="#"
               style={{ color: "orangered", textDecoration: "none" }}
             >
               Sign In

@@ -125,6 +125,13 @@ button {
   margin-top: 5px;
   padding: 1%;
   border: 1px solid orangered;
+  text-decoration: none;
+}
+
+.google-btn div {
+  border: 0;
+  outline: none;
+  background-color: none;
 }
 .btn-text p {
   color: black;
@@ -132,13 +139,34 @@ button {
   margin: 0;
 }
 
-.google-icon {
-  margin-right: 30px;
+
+.userType{
+  width: 100%;
 }
+
+#button {
+  border: 1px solid #5E5E60;
+  outline: none;
+  padding: 10px;
+  background-color: #fff;
+  text-decoration: none;
+  color: #5E5E60;
+  display: flex;
+  margin-bottom: 4%;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+
+}
+
 /* *!media queries >1414px*/
 @media (max-width: 1414px) {
   form {
     padding: 0;
+  }
+
+  #accessContent #accessForm{
+    padding: 10%;
   }
   .formBox h1 {
     margin-top: 70%;
@@ -150,6 +178,7 @@ button {
   section .imgBox img {
     height: 150%;
   }
+  
 }
 /* *!media queries >1334px*/
 @media (max-width: 1334px) {
@@ -182,10 +211,10 @@ button {
   .BannerText {
     display: none;
   }
-  button,
+  /* button,
   .google-btn {
     width: 50%;
-  }
+  } */
   .SignIn,
   .spanOr,
   .formBox h1,
@@ -211,10 +240,10 @@ button {
   .imgBox {
     display: none;
   }
-  button,
+  /* button,
   .google-btn {
     width: 100%;
-  }
+  } */
 
   section .contentBox .formBox {
     width: 100%;
@@ -259,10 +288,10 @@ button {
   form {
     padding: 0;
   }
-  button,
+  /* button,
   .google-btn {
     width: 100%;
-  }
+  } */
 
   .SignIn,
   .spanOr {
